@@ -11,13 +11,13 @@ Our deck (is preloaded):
 
 function defineSuit(card) {
 card.split("")
-if(card[1] == "♣") {
+if(card[card.length-1] == "♣") {
  return 'clubs'
-} if(card[1] == "♠") {
+} if(card[card.length-1] == "♠") {
  return 'spades'
-} if(card[1] == "♦") {
+} if(card[card.length-1] == "♦") {
  return 'diamonds'
-} if(card[1] == "♥") {
+} if(card[card.length-1] == "♥") {
  return 'hearts'
   }
 }
